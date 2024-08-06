@@ -1,10 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Muzure Dev
 
-## Getting Started
+# Muzure Dev
 
-First, run the development server:
+## Table of Contents
+1. [Project Description](#project-description)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
 
-```bash
+## Project Description
+Muzure Dev is a website for [Muzure Travel](https://www.muzuretravel.com). This project aims to showcase tours and services offered by Muzure Travel. It integrates various services to provide a seamless user experience for potential travelers.
+
+## Features
+- **Backend using Pocketbase**: Efficient and robust backend service for data management.
+- **WeTravel Integration**: Seamless integration with WeTravel for managing tour bookings and services.
+- **Website Chat using Tawk.to**: Real-time chat support to assist users with their inquiries.
+- ...
+
+## Technologies Used
+- **Typescript**: A superset of JavaScript that adds static typing, enhancing code quality and maintainability.
+- **Next.js**: A React framework for server-rendered applications, providing a rich set of features and optimizations.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Pocketbase**: An open-source backend service that provides a real-time database and file storage.
+- ...
+
+## Installation
+To get a local copy up and running, follow these simple steps:
+
+1. **Clone the repo**
+   ```sh
+   git clone https://github.com/Lucid-149/muzure-dev.git
+
 npm run dev
 # or
 yarn dev
@@ -15,8 +42,6 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
@@ -29,10 +54,10 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deployed on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The [Vercel Platform](https://www.muzuretravel.com) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# muzure
+
 # muzure-dev
