@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-rendering: optimizeLegibility;
+  scroll-snap-type: mandatory;
+  -webkit-box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+
+  text-emphasis: none;
+  text-decoration: none;
+  text-decoration-color: none;
+  text-decoration-line: none;
+  text-decoration-style: none;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  @apply bg-background;
+  width: 2px;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply m-24 rounded-full bg-background;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-foreground;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-orange-500;
+}
+
+@media only screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    @apply bg-background  h-1 hover:h-3;
+    width: 0px;
+    
+  }
+
+ 
+}
+.Hero {
+  -webkit-animation: kenburns-bottom 20s ease-out both;
+  animation: kenburns-bottom 20s ease-out both;
+}
+.text-in {
+	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+    transform-origin: 50% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(15px);
+    transform: scale(1.25) translateY(15px);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+}
+@keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+    transform-origin: 50% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(15px);
+    transform: scale(1.25) translateY(15px);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+  }
+}
+.billboard-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.billboard-content {
+  display: flex;
+  animation: scroll 520s linear infinite; /* Adjust the animation duration as needed */
+}
+
+.billboard-item {
+  width: 50px; /* Adjust the width of each item as needed */
+  margin-right: 20px; /* Adjust the margin between items as needed */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
