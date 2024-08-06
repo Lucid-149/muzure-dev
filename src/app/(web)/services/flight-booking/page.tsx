@@ -4,8 +4,6 @@ import Script from "next/script";
 export default function Page() {
   return (
     <main className="pt-16 relative">
-
-
       <div id="widget-stop" className=" mx-auto flex justify-center"></div>
       <Script
         id="kiwi booking"

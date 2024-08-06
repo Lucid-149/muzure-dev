@@ -50,10 +50,9 @@ export async function generateMetadata(
 
   // Ensure that Countries is an array of strings and convert to lowercase
 
-
   // Create a string of lowercase keywords
   const keywordsArray = [
-    data.result.Type.map((type)=>type.toLowerCase()),
+    data.result.Type.map((type) => type.toLowerCase()),
     "tour",
     "travel",
     "adventure",
@@ -67,7 +66,10 @@ export async function generateMetadata(
     openGraph: {
       title: data.result.Name,
       description: data.result.Description,
-      images: [{ url: data.result.Image, alt: data.result.Name }, ...previousImages],
+      images: [
+        { url: data.result.Image, alt: data.result.Name },
+        ...previousImages,
+      ],
       type: "website",
     },
     twitter: {
@@ -78,7 +80,6 @@ export async function generateMetadata(
     },
   };
 }
-
 
 export default async function Page({ params }: { params: { id: string } }) {
   const id = params.id;

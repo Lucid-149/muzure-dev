@@ -54,20 +54,20 @@ export default async function Page({ params }: { params: { id: string } }) {
         <Image
           src={`https://perigee.pockethost.io/api/files/${data.collectionId}/${data.id}/${data.image}`}
           className="w-full max-w-4xl aspect-video object-cover object-bottom"
-        isBlurred
-        removeWrapper
+          isBlurred
+          removeWrapper
           alt={data.title}
         />
       </div>
-        <div className=" flex flex-col justify-center items-center text-center z-20">
-          <h1 className=" text-2xl font-black">{data.title}</h1>
-          <h3 className=" font-semibold text-lg">{data.subtitle}</h3>
-        </div>
+      <div className=" flex flex-col justify-center items-center text-center z-20">
+        <h1 className=" text-2xl font-black">{data.title}</h1>
+        <h3 className=" font-semibold text-lg">{data.subtitle}</h3>
+      </div>
       <div
         className=" sm:prose-2xl prose-base  mt-5 mx-auto prose prose-strong:text-foreground w-full prose-headings:text-foreground text-foreground prose-lead:text-foreground prose-p:text-foreground-default "
         dangerouslySetInnerHTML={{ __html: data.body }}
       />
-      <BlogComponent id={data.id}/>
+      <BlogComponent id={data.id} />
     </div>
   );
 }

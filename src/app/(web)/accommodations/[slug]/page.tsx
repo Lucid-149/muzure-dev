@@ -10,11 +10,11 @@ export const revalidate = 3600;
 
 async function getAccommodation(slug: string) {
   try {
-    const accommodation = await pb
+    const accommodation = (await pb
       .collection("Accommodation")
       .getFirstListItem(`slug="${slug}"`, {
         expand: "destination",
-      }) as unknown as Accommodation;
+      })) as unknown as Accommodation;
     return accommodation;
   } catch (error) {
     console.error("Error fetching accommodation:", error);
@@ -24,11 +24,9 @@ async function getAccommodation(slug: string) {
 
 async function getRooms(accommodationId: string) {
   try {
-    const rooms = await pb
-      .collection("Room")
-      .getList(1, 20, {
-        filter: `Accommodation="${accommodationId}"`,
-      }) as unknown as ListResult<Room>;
+    const rooms = (await pb.collection("Room").getList(1, 20, {
+      filter: `Accommodation="${accommodationId}"`,
+    })) as unknown as ListResult<Room>;
     return rooms;
   } catch (error) {
     console.error("Error fetching rooms:", error);

@@ -109,7 +109,7 @@ export default function Page() {
             </li>
           </ol>
           <h2 className=" font-semibold text-xl pt-20 flex items-center">
-            Our starndard vehicles <ChevronRight/>
+            Our starndard vehicles <ChevronRight />
           </h2>
           <CarsComponent />
         </section>

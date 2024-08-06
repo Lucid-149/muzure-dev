@@ -10,8 +10,6 @@ export default function Error({
   error: Error;
   reset: () => void;
 }) {
-
-
   return (
     <div className="flex flex-col items-center justify-center w-full h-full min-h-screen">
       <h2>Something went wrong!</h2>

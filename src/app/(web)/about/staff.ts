@@ -19,6 +19,6 @@ export const Team: StaffMember[] = [
     profile:
       "https://utfs.io/f/5a928cfe-e794-4e2a-acec-87ce7faab447-1ff77d.png",
     email: "charity@muzuretravel.com",
-  }
+  },
 ];
 //

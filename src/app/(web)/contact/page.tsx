@@ -25,27 +25,24 @@ export default async function Page() {
       <div className="z-10 rounded-lg gap-4 drop-shadow-xl bg-background p-5 m-5  max-w-xl flex justify-center items-center">
         <Logo size={100} />
         <div className="flex flex-col gap-2 items-start">
+          <h3 className=" font-black text-xl">MUZURE TRAVEL</h3>
+          <span className=" flex justify-center items-center gap-3 ">
+            <MapPin />
+            Office 13,Teco Mall,Mombasa Road,Kenya
+          </span>
 
-        <h3 className=" font-black text-xl">MUZURE TRAVEL</h3>
-        <span
-          className=" flex justify-center items-center gap-3 "
-        >
-          <MapPin />
-          Office 13,Teco Mall,Mombasa Road,Kenya
-        </span>
-
-        <Link
-          className=" flex justify-center items-center gap-3 "
-          href={siteConfig.social.phonenumber}
-        >
-          <PhoneCall /> +254 795 805 779
-        </Link>
-        <Link
-          className=" flex justify-center items-center gap-3 "
-          href={siteConfig.social.whatsapp}
-        >
-          <MessagesSquare /> WhatsApp
-        </Link>
+          <Link
+            className=" flex justify-center items-center gap-3 "
+            href={siteConfig.social.phonenumber}
+          >
+            <PhoneCall /> +254 795 805 779
+          </Link>
+          <Link
+            className=" flex justify-center items-center gap-3 "
+            href={siteConfig.social.whatsapp}
+          >
+            <MessagesSquare /> WhatsApp
+          </Link>
         </div>
       </div>
       <ContactForm />

@@ -53,18 +53,16 @@ body {
   ::-webkit-scrollbar {
     @apply bg-background  h-1 hover:h-3;
     width: 0px;
-    
   }
-
- 
 }
 .Hero {
   -webkit-animation: kenburns-bottom 20s ease-out both;
   animation: kenburns-bottom 20s ease-out both;
 }
 .text-in {
-	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-contract 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 @-webkit-keyframes tracking-in-contract {
   0% {

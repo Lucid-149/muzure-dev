@@ -8,7 +8,6 @@ export default function Page() {
       <Image
         src={"https://utfs.io/f/9b6c8663-21e9-4d5b-87a6-d2b5f53b58c7-1d.jpg"}
         alt="East african adventure"
-        
         className=" -z-10 object-cover w-full border"
       />
       <FeaturedTour {...EastAficanExperience} />

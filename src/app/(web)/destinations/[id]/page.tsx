@@ -53,14 +53,16 @@ export async function generateMetadata(
 
   return {
     title: `${data.des.Name} | Explore Amazing Destinations`,
-    description: data.des.Description || `Discover the beauty and attractions of ${data.des.Name}`,
+    description:
+      data.des.Description ||
+      `Discover the beauty and attractions of ${data.des.Name}`,
     keywords: keywordsString,
     openGraph: {
       title: data.des.Name,
       description: data.des.Description,
       images: [
         { url: data.des.Image, alt: `${data.des.Name} - Destination Image` },
-        ...previousImages
+        ...previousImages,
       ],
       type: "website",
       locale: "en_US", // Adjust if you have multiple language versions
@@ -78,7 +80,7 @@ export async function generateMetadata(
     other: {
       "geo.region": data.des.expand?.Country?.ISO || "",
       "geo.placename": data.des.Name,
-    }
+    },
   };
 }
 
