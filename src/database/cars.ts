@@ -12,7 +12,7 @@ export const Cars: Car[] = [
     {
       id: 0,
       name: "Toyota Prado",
-      pricePerDay: 100,
+      pricePerDay: 150,
       capacity: 5,
       selfDrive: true,
       description:
@@ -23,7 +23,7 @@ export const Cars: Car[] = [
     {
       id:1,
       name: "Toyota Harrier",
-      pricePerDay: 60,
+      pricePerDay: 80,
       capacity: 5,
       selfDrive: true,
       description:
@@ -34,7 +34,7 @@ export const Cars: Car[] = [
     {
       id:2,
       name: "Toyota Premio",
-      pricePerDay: 40,
+      pricePerDay: 60,
       capacity: 5,
       selfDrive: true,
       description: "Toyota Premio automatic. Enjoy the convenience of self-drive.",

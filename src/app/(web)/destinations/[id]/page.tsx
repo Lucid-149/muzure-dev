@@ -5,7 +5,6 @@ import { Image } from "@nextui-org/image";
 import { Metadata, ResolvingMetadata } from "next";
 import { ListResult } from "pocketbase";
 
-export const revalidate = 43200;
 
 async function getDestinations(id: string) {
   try {
