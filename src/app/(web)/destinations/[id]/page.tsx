@@ -4,7 +4,7 @@ import { Destination, Itinerary, Tour } from "@/types";
 import { Image } from "@nextui-org/image";
 import { Metadata, ResolvingMetadata } from "next";
 import { ListResult } from "pocketbase";
-
+// Changes made
 
 async function getDestinations(id: string) {
   try {
